@@ -62,7 +62,7 @@ function SectionHeader1() {
       <div className="header-middle bg-white">
         <div className="container">
           <div className="logo-header">
-            <NavLink to={route.home.HOME1}>
+            <NavLink to="/">
               <FastImage
                 src="images/logo-1.png"
                 width={216}
@@ -237,7 +237,7 @@ function SectionHeader1() {
               </form>
             </div>
             <div className="logo-show-in-mobile">
-              <NavLink to={route.home.HOME1}>
+              <NavLink to="/">
                 <FastImage
                   src="images/logo-1.png"
                   width={216}
@@ -253,153 +253,23 @@ function SectionHeader1() {
                   <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
-                  <a href="#">
-                    Pages
-                    <i className="fa fa-chevron-down" />
-                  </a>
-                  <ul className="sub-menu">
-                    <li>
-                      <NavLink to={route.pages.ABOUT}>About us</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={route.pages.FAQ}>FAQ</NavLink>
-                    </li>
-                    <li>
-                      <a href="#">Our Team</a>
-                      <ul className="sub-menu">
-                        <li>
-                          <NavLink to={route.pages.team.TEAM}>Our Team</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to={route.pages.team.DETAIL}>
-                            Our Team Detail
-                          </NavLink>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">Contact</a>
-                      <ul className="sub-menu">
-                        <li>
-                          <NavLink to={route.pages.contact.CONTACT1}>
-                            Contact us 1
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to={route.pages.contact.CONTACT2}>
-                            Contact us 2
-                          </NavLink>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">Galley</a>
-                      <ul className="sub-menu">
-                        <li>
-                          <NavLink to={route.pages.gallery.GALLERY1}>
-                            Galley 1
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to={route.pages.gallery.GALLERY2}>
-                            Galley 2
-                          </NavLink>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <NavLink to={route.pages.ERROR404}>Error 404</NavLink>
-                    </li>
-                    <li>
-                      <a href="#">Features</a>
-                      <ul className="sub-menu">
-                        <li>
-                          <NavLink to={route.pages.features.footer.FIXED}>
-                            Fixed Footer
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to={route.pages.features.footer.LIGHT}>
-                            Light Footer
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to={route.pages.features.footer.DARK}>
-                            Dark Footer
-                          </NavLink>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                  <NavLink to="AboutUsPage">About us</NavLink>
                 </li>
                 <li>
-                  <a href="#">
-                    Services
-                    <i className="fa fa-chevron-down" />
-                  </a>
-                  <ul className="sub-menu">
-                    <li>
-                      <NavLink to={route.services.SERVICES}>Services</NavLink>
-                    </li>
+                  <NavLink to="FAQPage">FAQ</NavLink>
+                </li>
+                <li>
+                  <NavLink to={route.services.SERVICES}>Services</NavLink>
+                  {/* <ul className="sub-menu">
+                    <li></li>
                     <li>
                       <NavLink to={route.services.DETAIL}>
                         Services Detail
                       </NavLink>
                     </li>
-                  </ul>
+                  </ul> */}
                 </li>
-                <li>
-                  <a href="#">
-                    Blog
-                    <i className="fa fa-chevron-down" />
-                  </a>
-                  <ul className="sub-menu">
-                    <li>
-                      <NavLink to={route.blog.LIST}>Blog-List</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={route.blog.LIST_SIDEBAR}>
-                        Blog-List-Sidebar
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={route.blog.GRID}>Blog-Grid</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={route.blog.GRID_SIDEBAR}>
-                        Blog-Grid-Sidebar
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={route.blog.POST_SINGLE}>
-                        Blog-Post-single
-                      </NavLink>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">
-                    Shop
-                    <i className="fa fa-chevron-down" />
-                  </a>
-                  <ul className="sub-menu">
-                    <li>
-                      <NavLink to={route.shop.PRODUCTS}>Product</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={route.shop.DETAIL}>Product Detail</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={route.shop.CART}>Shopping cart</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={route.shop.WISHLIST}>Wishlist</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={route.shop.CHECKOUT}>Checkout</NavLink>
-                    </li>
-                  </ul>
-                </li>
+
                 <li>
                   <NavLink to={route.ELEMENTS}>Elements</NavLink>
                 </li>

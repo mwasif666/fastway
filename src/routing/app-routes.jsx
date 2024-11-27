@@ -31,38 +31,12 @@ function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home1Page />} />
-      <Route path={route.pages.ABOUT} element={<AboutUsPage />} />
-      <Route path={route.pages.FAQ} element={<FAQPage />} />
-      <Route path={route.pages.team.TEAM} element={<TeamPage />} />
-      <Route path={route.pages.team.DETAIL} element={<TeamDetailPage />} />
-      <Route path={route.pages.contact.CONTACT1} element={<ContactUs1Page />} />
-      <Route path={route.pages.contact.CONTACT2} element={<ContactUs2Page />} />
-      <Route path={route.pages.gallery.GALLERY1} element={<Gallery1Page />} />
-      <Route path={route.pages.gallery.GALLERY2} element={<Gallery2Page />} />
-      <Route
-        path={route.pages.features.footer.FIXED}
-        element={<FeaturesPage />}
-      />
-      <Route
-        path={route.pages.features.footer.LIGHT}
-        element={<FeaturesPage />}
-      />
-      <Route
-        path={route.pages.features.footer.DARK}
-        element={<FeaturesPage />}
-      />
+      <Route path="AboutUsPage" element={<AboutUsPage />} />
+      <Route path="FAQPage" element={<FAQPage />} />
+
       <Route path={route.services.SERVICES} element={<ServicesPage />} />
       <Route path={route.services.DETAIL} element={<ServiceDetailPage />} />
-      <Route path={route.blog.LIST} element={<BlogListPage />} />
-      <Route path={route.blog.LIST_SIDEBAR} element={<BlogListSidebarPage />} />
-      <Route path={route.blog.GRID} element={<BlogGridPage />} />
-      <Route path={route.blog.GRID_SIDEBAR} element={<BlogGridSidebarPage />} />
-      <Route path={route.blog.POST_SINGLE} element={<BlogPostSinglePage />} />
-      <Route path={route.shop.PRODUCTS} element={<ShopProductsPage />} />
-      <Route path={route.shop.DETAIL} element={<ShopProductDetailPage />} />
-      <Route path={route.shop.CART} element={<ShopCartPage />} />
-      <Route path={route.shop.WISHLIST} element={<ShopWishlistPage />} />
-      <Route path={route.shop.CHECKOUT} element={<ShopChekoutPage />} />
+
       <Route path={route.ELEMENTS} element={<ElementsPage />} />
       <Route path="*" element={<Error404 />} />
     </Routes>
