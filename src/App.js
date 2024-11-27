@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
 import Loader from "./globals/elements/loader";
 import ScrollToTop from "./globals/scroll-to-top";
-// import RootLayout from "./layouts/root-layout";
 import AppRoutes from "./routing/app-routes";
 
 function App() {
@@ -12,11 +12,11 @@ function App() {
   }, 1000);
 
   return (
-    <>
+    <BrowserRouter>
       {isLoading && <Loader />}
       <ScrollToTop />
       <AppRoutes />
-    </>
+    </BrowserRouter>
   );
 }
 
