@@ -2,7 +2,8 @@ import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import Loader from "./globals/elements/loader";
 import ScrollToTop from "./globals/scroll-to-top";
-import AppRoutes from "./routing/app-routes";
+// import AppRoutes from "./routing/app-routes";
+import Home1Page from "./app/components/home/home1";
 
 function App() {
   const [isLoading, setLoading] = useState(true);
@@ -15,7 +16,7 @@ function App() {
     <BrowserRouter>
       {isLoading && <Loader />}
       <ScrollToTop />
-      <AppRoutes />
+      <Home1Page />
     </BrowserRouter>
   );
 }
