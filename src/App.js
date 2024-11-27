@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Loader from "./globals/elements/loader";
 import ScrollToTop from "./globals/scroll-to-top";
-import RootLayout from "./layouts/root-layout";
+// import RootLayout from "./layouts/root-layout";
+import AppRoutes from "./routing/app-routes";
 
 function App() {
-
   const [isLoading, setLoading] = useState(true);
 
   setTimeout(() => {
@@ -15,7 +15,7 @@ function App() {
     <>
       {isLoading && <Loader />}
       <ScrollToTop />
-      <RootLayout />
+      <AppRoutes />
     </>
   );
 }
