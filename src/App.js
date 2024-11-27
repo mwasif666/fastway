@@ -12,13 +12,7 @@ function App() {
     setLoading(false);
   }, 1000);
 
-  return (
-    <BrowserRouter>
-      {isLoading && <Loader />}
-      <ScrollToTop />
-      <Home1Page />
-    </BrowserRouter>
-  );
+  return <h1>App</h1>;
 }
 
 export default App;
